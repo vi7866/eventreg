@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+
+import Header from './header';
+import EventDetails from './eventdetails';
+import RegistrationForm from './Registrationform';
+import FAQs from './FAQ';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    ID: '',
+    email: '',
+    contact: '',
+  });
+
+  const handleFormChange = (updatedData) => {
+    setFormData(updatedData);
+ };
+
+  return (<>
+  <div className='main-container'>
+    <Header />
+    <div className="app-container">
+
+    <a id="one"></a> <EventDetails />
+      <h1>Student Event Registration</h1>
+      <div className="App">
+      <a id="two"></a><RegistrationForm formData={formData} onFormChange={handleFormChange} />
     </div>
+      <a id="three"></a>
+      <FAQs />
+    </div>
+    </div>
+    </>
   );
-}
+};
 
 export default App;
+

@@ -1,0 +1,28 @@
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   
+   .faq-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+   }
+   
+   .faq-item {
+    margin-bottom: 30px;
+   }
+   
+   .faq-question {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+   }
+   
+   .faq-answer {
+    font-size: 16px;
+    line-height: 1.6;
+   }
+   

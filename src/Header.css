@@ -1,0 +1,41 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    height:10vh;
+}
+.items {
+    display:flex; 
+    align-items: center;
+    margin-right:5%;
+}
+.item{
+    display:inline;
+    text-decoration: none;
+    padding:5px;
+    margin:5px 5px 0px 0px;
+    color:black;
+    font-size: larger;
+ }
+.event-logo{
+    height:90px;
+    width:140px;
+    
+}
+
+.item:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+h1{
+    display:flex;
+    font-family: cursive;
+    align-items:center;
+
+}   
+
+img{
+height:100vh;
+width:98.9vw;
+}
+
+
